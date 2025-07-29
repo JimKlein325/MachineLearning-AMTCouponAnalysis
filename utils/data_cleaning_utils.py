@@ -9,9 +9,7 @@ def safe_drop_columns(df, columns_to_drop):
         print("No columns to drop")
         return df
     
-    def print_data_shape(new_dataframe, old_dataframe):
-        print(f"\nDataset shape after cleaning: {df.shape}")
-        print(f"Original shape: {df.shape}")
+    
 
 
 
@@ -52,4 +50,5 @@ def analyze_missing_data(df):
         'missing_by_column': missing_by_column.to_dict(),
         'missing_by_column_pct': missing_by_column_pct.to_dict()
     }
+
 
